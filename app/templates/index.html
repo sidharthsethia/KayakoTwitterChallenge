@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-    <h1>Retweets containing {{ hashtag }}</h1>
+    <h1>Tweets that have retweeted and contain the hashtag: {{ hashtag }}</h1>
     <div class="row">
         {% for tweet in tweets %}
             <div class="column-4">
                 <div class="twitter-tweet">
-                    <p class="user-name">{{tweet.user.name}}</p><p class="user-handle"> @{{tweet.user.screen_name}}</p>
+                    <p class="twitter-logo"><a href="{{tweet.tweet_url}}"><i class="fa fa-twitter"></i></a></p><p class="user-name">{{tweet.user.name}}</p><p class="user-handle"> @{{tweet.user.screen_name}}</p>
                     <p class="tweet-text">{{tweet.text}}</p>
                     <p class="retweet">Retweets: {{ tweet.retweet_count }}</p>
                 </div>
@@ -13,6 +13,3 @@
         {% endfor %}
     </div>
 {% endblock %}
-
-<!--
-<div><p>{{ tweet.user.screen_name }} tweeted: <b>{{ tweet.text }}</b></p></div>-->
