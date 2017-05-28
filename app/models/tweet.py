@@ -1,7 +1,5 @@
 import json
-
 from TwitterSearch import *
-
 from app.models.authorise import Authorise
 
 
@@ -43,16 +41,18 @@ class TweetSearch:
 
             # For each tweet in the dictionary's Values,
             for tweet in retweets.values():
-                # add the tweet to results
+
                 tweet_url = "https://twitter.com/" + tweet['user']['screen_name'] + "/status/" + tweet['id_str']
                 tweet['tweet_url'] = tweet_url
+
+                # add the tweet to results
                 results.append(tweet)
 
-            # for tweet in results:
-            #     print(tweet)
+                # for tweet in results:
+                #     print(tweet)
 
-            # print(actual_count)
-            # print(len(results))
+                # print(actual_count)
+                # print(len(results))
 
         except TwitterSearchException as e:  # take care of all those ugly errors if there are some
             print(e)
