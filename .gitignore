@@ -35,9 +35,6 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-app/config.ini
 .idea/
 app/__pycache__/__init__.cpython-36.pyc
-app/__pycache__/views.cpython-36.pyc
-app/statics/__pycache__/authorise.cpython-36.pyc
-app/statics/__pycache__/tweet.cpython-36.pyc
+app/models/__pycache__/

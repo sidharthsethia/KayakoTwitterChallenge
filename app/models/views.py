@@ -1,7 +1,7 @@
-from app import app
 from flask import render_template
 
-from app.static.tweet import TweetSearch
+from app import app
+from app.models.tweet import TweetSearch
 
 
 @app.route('/')
