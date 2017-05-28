@@ -1,7 +1,7 @@
 import json
 
 from TwitterSearch import *
-from app.statics.authorise import Authorise
+from app.static.authorise import Authorise
 
 
 class TweetSearch:
