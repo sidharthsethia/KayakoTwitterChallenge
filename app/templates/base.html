@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    {% if title %}
+    <title>{{ title }} - Kayako Twitter Challenge</title>
+    {% else %}
+    <title>Welcome</title>
+    {% endif %}
+  </head>
+  <body>
+  <div id="heading"><big>Kayako Twitter Challenge: <a href="/index">Home</a></big></div>
+    <hr>
+    {% block content %}{% endblock %}
+  </body>
+</html>
+
