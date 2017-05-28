@@ -1,1 +1,1 @@
-web: python KayakoTwitterChallenge/app/run.py
+web: python run.py
