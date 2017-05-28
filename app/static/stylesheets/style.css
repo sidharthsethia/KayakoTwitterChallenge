@@ -1,0 +1,82 @@
+body{
+    padding:0px;
+}
+
+#heading {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    background: #00aced;
+    padding: 20px 10px;
+    text-align: center;
+    color: white;
+}
+
+.column-4 {
+    background: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+    width: 32%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1%;
+}
+
+.tweet-text{
+    min-height:55px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+.twitter-tweet{
+    margin: 10px 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+.user-name{
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+.user-handle{
+    display: inline-block;
+    font-size: 16px;
+    color: grey;
+    margin-bottom: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+.retweet{
+    margin-top: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+.row{
+    margin-left: 25px;
+    margin-right: auto;
+}
+
+h1{
+    margin-left: 25px;
+    margin-right: auto;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+@media screen and (max-width : 480px ) {
+    .column-4{
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+
