@@ -1,10 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
     <h1>Retweets containing {{ hashtag }}</h1>
-    {% for tweet in tweets %}
-<div><blockquote class="twitter-tweet"><p>{{tweet.text}}</p>&mdash; {{tweet.user.name}} (@{{tweet.user.screen_name}}) <a href={{tweet.tweet_url}} data-datetime="2012-12-03T18:51:11+00:00">December 3, 2012</a></blockquote></div>
-    <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    {% endfor %}
+    <div class="row">
+        {% for tweet in tweets %}
+            <div class="column-4">
+                <div class="twitter-tweet">
+                    <p class="user-name">{{tweet.user.name}}</p><p class="user-handle"> @{{tweet.user.screen_name}}</p>
+                    <p class="tweet-text">{{tweet.text}}</p>
+                    <p class="retweet">Retweets: {{ tweet.retweet_count }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
 
 <!--
