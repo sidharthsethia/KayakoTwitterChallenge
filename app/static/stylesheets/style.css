@@ -13,18 +13,20 @@ body{
 }
 
 .column-4 {
+    background: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
+    box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.15);
     margin-bottom: 20px;
-    width: 33.333%;
+    width: 32%;
     display: inline-block;
     vertical-align: top;
-    float: left;
+    margin-right: 1%;
 }
 
 
 .tweet-text{
-    min-height:60px;
+    min-height:70px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
 }
@@ -33,13 +35,10 @@ body{
     margin: 10px 15px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
-    box-shadow: 2px 1px 3px 1px rgba(0, 0, 0, 0.15);
-    padding: 10px 15px;
 }
 
 .twitter-logo{
     font-size: 18px;
-    font-weight: 600;
     display: inline-block;
     margin-bottom: 0px;
     margin-right: 10px;
@@ -52,6 +51,7 @@ body{
     font-weight: 600;
     display: inline-block;
     margin-bottom: 0px;
+    margin-top: 0px;
     margin-right: 10px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -61,6 +61,7 @@ body{
     display: inline-block;
     font-size: 16px;
     color: grey;
+    margin-top: 0px;
     margin-bottom: 0px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
@@ -74,8 +75,8 @@ body{
 
 .row{
     max-width : 96%;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:3%;
+    margin-right:1%;
 }
 
 h1{
