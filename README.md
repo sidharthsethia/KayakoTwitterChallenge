@@ -43,6 +43,12 @@ This app is deployed currently as https://nameless-coast-82870.herokuapp.com
 * [flask](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
 * [Heroku](https://maven.apache.org/) - Web hosting
 
+## Improvements and Future Work
+
+- The app performance can be improved by caching the tweets and saving them in a database.
+- Tweets can be filtered through location coordinates and thus can give a better search. Also asking search parameters on-the-go can widen the scope of the system
+- Adding option to load more tweets
+
 ## Authors
 
 * **Sidharth Sethia** - sethiasidharth@gmail.com
