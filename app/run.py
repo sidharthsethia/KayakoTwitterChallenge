@@ -1,4 +1,4 @@
 #!flask/bin/python
 # start the application
 from app import app
-app.run(debug=True)
+app.run(debug=True,use_reloader=False)
